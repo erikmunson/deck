@@ -14,6 +14,7 @@ import {
   Markdown,
   DeployingIntoManagedClusterWarning,
   TaskReason,
+  Icon,
 } from '@spinnaker/core';
 
 import { IAmazonImage } from 'amazon/image';
@@ -208,6 +209,7 @@ export class ServerGroupBasicSettings
           </div>
         )}
         <DeployingIntoManagedClusterWarning app={app} formik={formik} />
+        <Icon name="artifact" color="danger" size="large" />
         <div className="form-group">
           <div className="col-md-3 sm-label-right">Account</div>
           <div className="col-md-7">
